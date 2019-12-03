@@ -1,3 +1,4 @@
+package uf3;
 import java.net.*;
 import java.io.*;
 
@@ -23,7 +24,7 @@ public class ClientTCP2 {
 		//Lectura teclat
 		cadena = in.readLine();
 		
-		while (cadena != null) {
+		while (!cadena.equals("exit")) {
 			
 			//Enviament cadena al servidor
 			fsortida.println(cadena);
